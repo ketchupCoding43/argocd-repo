@@ -1,0 +1,4 @@
+server:
+  service:
+    type: NodePort
+    nordPortHttp: 30000
