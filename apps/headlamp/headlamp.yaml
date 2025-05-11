@@ -6,17 +6,20 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/ketchupCoding43/argocd-repo.git'
+    repoURL: https://github.com/ketchupCoding43/argocd-repo.git
     targetRevision: HEAD
     path: apps/headlamp/base
     helm:
-      valueFiles:
-        - values.yaml
+      values: |
+        replicaCount: 1
+        service:
+          type: NodePort
+          port: 80
+        nodePort: 30080
   destination:
-    server: 'https://kubernetes.default.svc'
-    namespace: headlamp
+    server: https://kubernetes.default.svc
+    namespace: default
   syncPolicy:
     automated:
       prune: true
       selfHeal: true
-
