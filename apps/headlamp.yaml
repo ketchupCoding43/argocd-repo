@@ -4,19 +4,18 @@ metadata:
   name: headlamp
   namespace: argocd
 spec:
-  project: test-project
+  project: default
   source:
-    repoURL: https://github.com/ketchupCoding43/argocd-repo.git
-    targetRevision: main
+    repoURL: https://github.com/<your-org>/argocd-repo
+    targetRevision: HEAD
     path: apps/headlamp/base
     helm:
       valueFiles:
         - values.yaml
   destination:
     server: https://kubernetes.default.svc
-    namespace: default
+    namespace: headlamp
   syncPolicy:
-    automated:
+    automated:  # this enables auto-sync
       prune: true
       selfHeal: true
-
