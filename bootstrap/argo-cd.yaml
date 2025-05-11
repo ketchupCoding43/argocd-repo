@@ -10,7 +10,7 @@ metadata:
 spec:
   destination:
     namespace: argocd
-    server: https://ha1.soham.iitb.ac.in
+    server: https://kubernetes.default.svc
   ignoreDifferences:
   - group: argoproj.io
     jsonPointers:
