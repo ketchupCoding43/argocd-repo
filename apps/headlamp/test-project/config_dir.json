@@ -3,9 +3,9 @@
   "userGivenName": "headlamp",
   "destNamespace": "default",
   "destServer": "https://kubernetes.default.svc",
-  "srcPath": "overlays/test",
-  "srcRepoURL": "apps/headlamp.git",
-  "srcTargetRevision": "",
+  "srcPath": "apps/headlamp",              // ✅ Corrected path
+  "srcRepoURL": "https://github.com/ketchupCoding43/argocd-repo.git",  // ✅ Full Git URL
+  "srcTargetRevision": "HEAD",
   "labels": null,
   "annotations": null,
   "exclude": "",
