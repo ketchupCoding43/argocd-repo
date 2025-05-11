@@ -1,0 +1,4 @@
+helmCharts:
+  - name: headlamp
+    path: ../../base
+    valuesFile: values.yaml
