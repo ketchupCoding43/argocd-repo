@@ -1,0 +1,13 @@
+{
+  "appName": "headlamp",
+  "userGivenName": "headlamp",
+  "destNamespace": "default",
+  "destServer": "https://kubernetes.default.svc",
+  "srcPath": "overlays/test",
+  "srcRepoURL": "apps/headlamp.git",
+  "srcTargetRevision": "",
+  "labels": null,
+  "annotations": null,
+  "exclude": "",
+  "include": ""
+}
