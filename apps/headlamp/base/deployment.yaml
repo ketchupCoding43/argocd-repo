@@ -25,7 +25,7 @@ spec:
           env:
             - name: HEADLAMP_ALLOWED_KUBECONFIGS
               value: ""
+            - name: HEADLAMP_MODE
+              value: "frontend"  # 👈 Forces login mode
             - name: HEADLAMP_TOKEN_LOGIN
               value: "true"
-            - name: HEADLAMP_MODE
-              value: "cluster"
