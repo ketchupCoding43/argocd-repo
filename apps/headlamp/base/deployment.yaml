@@ -26,3 +26,5 @@ spec:
               value: ""
             - name: HEADLAMP_TOKEN_LOGIN
               value: "true"
+            - name: HEADLAMP_MODE
+              value: "cluster"
