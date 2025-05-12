@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+kapiVersion: apps/v1
 kind: Deployment
 metadata:
   name: headlamp
@@ -20,3 +20,9 @@ spec:
           ports:
             - name: http
               containerPort: 8080
+          env:
+            - name: HEADLAMP_ALLOWED_KUBECONFIGS
+              value: ""
+            - name: HEADLAMP_TOKEN_LOGIN
+              value: "true"
+
