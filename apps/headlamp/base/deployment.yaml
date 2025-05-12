@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: headlamp
-  namespace: default  # <-- add this line!
+  namespace: default
   labels:
     app: headlamp
 spec:
@@ -15,6 +15,7 @@ spec:
       labels:
         app: headlamp
     spec:
+      serviceAccountName: headlamp-admin  # <== Add this line!
       containers:
         - name: headlamp
           image: ghcr.io/headlamp-k8s/headlamp:v0.21.0
