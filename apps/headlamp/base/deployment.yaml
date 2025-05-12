@@ -1,7 +1,8 @@
-kapiVersion: apps/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: headlamp
+  namespace: default  # <-- add this line!
   labels:
     app: headlamp
 spec:
@@ -25,4 +26,3 @@ spec:
               value: ""
             - name: HEADLAMP_TOKEN_LOGIN
               value: "true"
-
