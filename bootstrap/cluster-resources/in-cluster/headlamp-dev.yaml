@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/ketchupCoding43/argocd-repo.git
-    path: headlamp/overlays/dev
+    path: apps/headlamp/overlays/dev
     targetRevision: HEAD
   destination:
     server: https://kubernetes.default.svc
