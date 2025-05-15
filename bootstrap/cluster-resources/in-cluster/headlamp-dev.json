@@ -1,0 +1,12 @@
+{
+  "name": "headlamp-dev",
+  "source": {
+    "repoURL": "https://github.com/<your-username>/argocd-repo.git",
+    "path": "headlamp/overlays/dev",
+    "targetRevision": "HEAD"
+  },
+  "destination": {
+    "server": "https://kubernetes.default.svc",
+    "namespace": "headlamp"
+  }
+}
