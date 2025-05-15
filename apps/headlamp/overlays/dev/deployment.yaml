@@ -8,4 +8,4 @@ spec:
     spec:
       containers:
         - name: headlamp
-          image: ghcr.io/headlamp-k8s/headlamp:v0.18.0  # use pinned version
+          image: ghcr.io/headlamp-k8s/headlamp:latest  # use pinned version
