@@ -3,9 +3,9 @@ kind: Kustomization
 
 namespace: headlamp
 
-bases:
+resources:
   - ../../base
+  - namespace.yaml
 
 patchesStrategicMerge:
   - deployment.yaml
-  - namespace.yaml
