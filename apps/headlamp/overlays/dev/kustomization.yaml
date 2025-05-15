@@ -7,6 +7,5 @@ bases:
   - ../../base
 
 patchesStrategicMerge:
-  - deployment.yaml  # Optional: patch replicas, image tags, etc.
+  - deployment.yaml
   - namespace.yaml
-  - service.yaml

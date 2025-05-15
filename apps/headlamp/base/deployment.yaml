@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: headlamp
-  namespace: headlamp
   labels:
     app: headlamp
 spec:
@@ -16,9 +15,9 @@ spec:
         app: headlamp
     spec:
       containers:
-      - name: headlamp
-        image: ghcr.io/headlamp-k8s/headlamp:latest
-        ports:
-        - containerPort: 8080
-        args:
-        - --disable-telemetry
+        - name: headlamp
+          image: ghcr.io/headlamp-k8s/headlamp:latest
+          ports:
+            - containerPort: 8080
+          args:
+            - --disable-telemetry

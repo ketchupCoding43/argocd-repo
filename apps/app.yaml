@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/ketchupCoding43/argocd-repo.git
     targetRevision: HEAD
-    path: apps/headlamp/overlays/dev
+    path: headlamp/overlays/dev
   destination:
     server: https://kubernetes.default.svc
     namespace: headlamp
@@ -16,5 +16,3 @@ spec:
     automated:
       prune: true
       selfHeal: true
-    syncOptions:
-      - CreateNamespace=true
