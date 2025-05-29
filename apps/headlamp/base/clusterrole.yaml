@@ -4,7 +4,7 @@ metadata:
   name: headlamp-clusterrole
 rules:
   - apiGroups: [""]
-    resources: ["namespaces", "nodes", "pods", "services"]
+    resources: ["namespaces", "nodes", "pods", "services", "events"]
     verbs: ["get", "list", "watch"]
   - apiGroups: ["apps"]
     resources: ["deployments", "statefulsets", "replicasets"]
