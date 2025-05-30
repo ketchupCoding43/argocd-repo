@@ -1,0 +1,8 @@
+resources:
+  - service.yaml
+  - deployment.yaml
+  - serviceaccount.yaml
+  - clusterrole.yaml
+  - clusterrolebinding.yaml
+  - rbac/metrics-clusterrole.yaml
+  - rbac/metrics-clusterrolebinding.yaml

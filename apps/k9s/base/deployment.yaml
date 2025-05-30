@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: k9s-dashboard
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: k9s-dashboard
+  template:
+    metadata:
+      labels:
+        app: k9s-dashboard
+    spec:
+      serviceAccountName: k9s-admin
+      containers:
+        - name: k9s-web
+          image: ghcr.io/derailed/k9s:latest  # Replace with gotty-wrapped version if needed
+          ports:
+            - containerPort: 8080
+          tty: true
