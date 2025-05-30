@@ -15,7 +15,7 @@ spec:
       serviceAccountName: k9s-admin
       containers:
         - name: k9s-web
-          image: ghcr.io/derailed/k9s:latest  # Replace with gotty-wrapped version if needed
+          image: ghcr.io/someuser/k9s-web-wrapper:latest  # Replace with gotty-wrapped version if needed
           ports:
             - containerPort: 8080
           tty: true
